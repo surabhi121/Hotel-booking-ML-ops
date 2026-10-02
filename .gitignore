@@ -1,0 +1,26 @@
+# Python cache files
+__pycache__/        
+*.pyc       
+*.pyo
+    
+# Environment files
+.env               
+venv/
+.venv/
+    
+# Data and models — tracked by DVC, not Git
+data/raw/*                                                                                                                                             
+!data/raw/*.dvc
+data/processed/*                                                                                                                                       
+!data/processed/*.dvc
+models/*             
+!models/*.dvc
+            
+# MLflow server data — generated in Phase 2
+mlflow-data/                                                                                                                                           
+            
+# Jupyter                                                                                                                                              
+.ipynb_checkpoints/
+                    
+# Mac
+.DS_Store
